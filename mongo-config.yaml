@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mongo-config
+data:
+  # The db is accessed through the mongo-service, regardless of which instance of mongo db container we use
+  mongo-url: mongo-service 
